@@ -35,8 +35,7 @@ pipeline {
                build 'dev-deployment'
             }
         }
-    }  
-     stage ("delivery"){
+    }  stage ("delivery"){
         steps 
         {
         time out(2)
