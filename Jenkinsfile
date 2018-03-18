@@ -33,12 +33,6 @@ echo "M2_HOME = ${M2_HOME}"
            steps {
                 build 'dev-deployment'
            }
-       stage ("delivery"){
-           steps {
-               timeout(2) 
-               input 'do you want to deploy in production'
-           }
-       }
        }
     }
 } 
