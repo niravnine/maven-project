@@ -36,10 +36,13 @@ pipeline {
             }
         }
     }  stage ("delivery"){
-        steps 
-        {
+        steps {
         time out(2)
         input 'do you want to deploy'
+        
         }
-    }build 'deploy to production '
+    }
+    
+
+
 }
