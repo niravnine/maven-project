@@ -21,7 +21,7 @@ pipeline {
             }
              post {
                  success{
-                     echo "archive artifacts"
+                     echo "archive artifact"
                      archiveArtifacts '**/*.war/'
                      echo "junit report"
                      junit '**/target/surefire-reports/*.xml'
