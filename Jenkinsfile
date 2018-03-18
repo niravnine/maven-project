@@ -29,7 +29,7 @@ echo "M2_HOME = ${M2_HOME}"
                 }
             }     
        }       
-       stage ("deploy"){
+       stage ("deploy") {
            steps {
                 build 'dev-deployment'
            }
