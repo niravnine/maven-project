@@ -21,7 +21,7 @@ echo "M2_HOME = ${M2_HOME}"
           post {
               success{
                    echo "archive artifact"
-                   archiveArtifacts '**/*.war/'
+                   archiveArtifacts '**/*.war'
                    echo "junit report"
                    junit '**/target/surefire-reports/*.xml'
                    echo "code quality checksum"
