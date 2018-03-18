@@ -32,8 +32,15 @@ pipeline {
         }       
         stage ("deploy"){
             steps {
-                echo "this is deploy stage"
+               build 'dev-deployment'
             }
         }
-    }
+    }  
+     stage ("delivery"){
+        steps 
+        {
+        time out(2)
+        input 'do you want to deploy'
+        }
+    }build 'deploy to production '
 }
